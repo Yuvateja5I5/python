@@ -1,0 +1,8 @@
+def fibonacci(n):
+    a=0
+    b=1
+    for i in range(n):
+        a,b=b,a+b
+        print(a)
+n=int(input("enter the range:"))
+fibonacci(n)
