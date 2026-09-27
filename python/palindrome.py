@@ -1,9 +1,10 @@
-class Solution:
-    def isPalindrome(self, x):
-        x=str(x)
-        return x==x[::-1]
-s1=Solution()
-x=12241
-print(s1.isPalindrome(x))
-        
-        
+n=input("Enter a string:")
+def palindrome(n):
+    rev=""
+    for i in n:
+        rev=i+rev
+    if rev==n:
+        print("Palindrome")
+    else:
+        print("not a palindrome")
+palindrome(n)
